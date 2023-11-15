@@ -10,3 +10,37 @@
   }
 
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Solway:wght@300;400;700&family=Spectral:ital,wght@0,300;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--white);
+    background-color: var(--brown);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+/* HEADER */
+    /* NAV */
+header nav, nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+
+}
