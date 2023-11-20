@@ -1,0 +1,29 @@
+:root {
+/* COLORS */
+    /* BROWNS */
+    --brownLighter:   #E5D089;
+    --brownLight:     #BA946C;
+
+    --brown:          #4E3124;
+    --brownBorder:    #71563B;
+
+    --brownDark:      #271812;
+    --brownDarker:    #231b18;
+
+
+    /* WHITES */
+    --white:          #FAFAFA;
+
+/* SHADOWS */
+    /* TEXT SHADOW */
+    --textShadow: 1px 2px 7px rgba(0, 0, 0, 0.77); /* BIG TEXT */
+    --textShadowLighter: 1px 2px 5px rgba(0, 0, 0, 0.40); /* GENERAL TEXT */
+
+    --textShadowWhite: 1px 2px 7px rgba(255, 255, 255, 0.20);
+
+    /* BACKGROUND SHADOW */
+    --backgroundShadowGradient: linear-gradient(rgba(0, 0, 0, 0.7) , transparent 15%);
+
+/* BORDERS */
+    --borderBrown: 3px solid var(--brownBorder);
+}

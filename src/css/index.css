@@ -4,12 +4,13 @@
     · Solway
     · Spectral
 */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Solway:wght@300;400;700&family=Spectral:ital,wght@0,300;1,300&display=swap');
+
 @font-face {
     font-family: 'ButterChicken';
     src:  url('../fonts/ButterChicken.otf') format('opentype');
-  }
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Solway:wght@300;400;700&family=Spectral:ital,wght@0,300;1,300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -19,6 +20,10 @@
 
     text-decoration: none;
     list-style-type: none;
+
+    max-width: 100%;
+
+    color: inherit;
 }
 
 body {
@@ -27,10 +32,15 @@ body {
 
     color: var(--white);
     background-color: var(--brown);
+
+    width: 100vw;
 }
 
 /* HEADER */
 header {
+    background-color: transparent;
+    position: absolute;
+
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -41,6 +51,189 @@ header {
 header nav, nav ul {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
 
+    width: 100vw;
+}
+
+/* SECTION 1 */
+section#section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0) 85%, var(--brown)),
+                      linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+                      url("../img/banner1.png");
+
+    height: 500px;
+    width: 100vw;
+}
+
+#section1 h1{
+    font-family: ButterChicken;
+    font-size: 15vw;
+    letter-spacing: 10px;
+
+    text-shadow: var(--textShadow);
+}
+
+#section1 hr {
+    width: 80vw;
+}
+
+#section1 h2 {
+    font-family: "Spectral";
+    font-style: italic;
+    letter-spacing: 8px;
+    font-size: 5vw;
+    text-align: center;
+
+    text-shadow: var(--textShadowWhite);
+    color: var(--brownLight);
+}
+
+/* MAIN */
+main {
+    
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+    /* Hide 2 containers - TODO: Leave like this or use JS */
+#body__section__2, #body__section__3 {
+    display: none;
+}
+
+.body__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    padding: 8vw;
+}
+
+.body__section img {
+    max-width: 20vw;
+    margin-bottom: 30px;
+}
+
+.body__section h3 {
+    font-family: "ButterChicken";
+    color: var(--brownLight);
+    text-shadow: var(--textShadowLighter);
+
+    font-size: x-large;
+    letter-spacing: 2px;
+
+    max-width: 60%;
+    margin-bottom: 15px;
+}
+
+.body__section button {
+    font-family: "ButterChicken";
+    color: var(--brownLight);
+    text-shadow: var(--textShadowLighter);
+    font-size: x-large;
+
+    background-color: transparent;
+    border: var(--borderBrown);
+
+    padding: 5px 22px 0px 22px;
+}
+
+/* SECTION 2 */
+
+section#section2 {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+
+    background-color: var(--brownDark);
+
+    padding: 10vw 5vw;
+
+}
+
+.section2__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: var(--borderBrown);
+
+    font-family: "ButterChicken";
+    color: var(--brownLight);
+    text-shadow: var(--textShadowLighter);
+}
+
+.section2__section h2 {
+    color: var(--white);
+}
+
+.section2__section p {
+    font-size: x-large;
+    max-width: 60vw;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: var(--backgroundShadowGradient);
+    background-color: var(--brownDarker);
+
+    font-family: "Solway";
+
+    height: fit-content;
+
+    padding-top: 30px;
+}
+
+.footer__section:first-child {
+    display: none;
+}
+
+.footer__section#social {
+    display: none;
+}
+
+.footer__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: var(--brownLighter);
+    font-size: x-large;
+}
+
+.footer__section hr {
+    min-width: 40vw;
+
+    margin-bottom: 0.5em;
+}
+
+.footer__section h2 {
+    color: var(--white);
+
+    font-size: xx-large;
+}
+
+.footer__section a {
+    text-decoration: underline;
+}
+
+.footer__section:last-child {
+    margin: 3em 0 1em 0;
+    
+    color: gray;
+    font-size: small;
 }
