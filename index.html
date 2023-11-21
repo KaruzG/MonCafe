@@ -10,10 +10,17 @@
     <link rel="stylesheet" href="./src/css/index.css">
     <link rel="stylesheet" href="./src/css/desktop.css">
 
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/36d6492ec2.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="mobileNav">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </nav>
+
+        <nav id="desktopNav">
             <ul>
                 <li>HOME</li>
                 <li>MENU</li>
@@ -33,21 +40,35 @@
 
     <main>
         <div class="body__section" id="body__section__1">
-            <img src="./src/img/icons/icon1.png" alt="Cafe">
-            <h3>We serve the finest handcrafted brews</h3>
+            <div class="body__section--image">
+                <img src="./src/img/icons/icon3.png" alt="Cafe">
+            </div>
+            <div class="body__section--textAndArrows">
+                <i class="fa-solid fa-chevron-left fa-xl"></i>
+                <h3>We serve the finest handcrafted brews</h3>
+                <i class="fa-solid fa-chevron-right fa-xl"></i>
+            </div>
             <button class="body-button">Check out</button>
         </div>
 
         <div class="body__section" id="body__section__2">
             <img src="./src/img/icons/icon2.png" alt="Muffin">
-            <h3>We have an array of delectable treats</h3>
+            <div>
+                <i class="fa-solid fa-chevron-left fa-xl"></i>
+                <h3>We have an array of delectable treats</h3>
+                <i class="fa-solid fa-chevron-right fa-xl"></i>
+            </div>
             <button class="body-button">Check out</button>
 
         </div>
 
         <div class="body__section" id="body__section__3">
             <img src="./src/img/icons/icon3.png" alt="Muffins">
-            <h3>A delightful selection of dishes, both sweet and s</h3>
+            <div>
+                <i class="fa-solid fa-chevron-left fa-xl"></i>
+                <h3>A delightful selection of dishes, both sweet and s</h3>
+                <i class="fa-solid fa-chevron-right fa-xl"></i>
+            </div>
             <button class="body-button">Check out</button>
         </div>
     </main>
@@ -72,6 +93,16 @@
     </section>
 
     <footer>
+        <div class="footer__section" id="social">
+            <h2>SOCIAL</h2>
+            <div>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <i class="fa-brands fa-whatsapp fa-xl"></i>
+                <i class="fa-regular fa-envelope fa-xl"></i>
+            </div>
+
+        </div>
+
         <div class="footer__section">
             <h2>SITE PAGES</h2>
             <ul>
@@ -91,11 +122,6 @@
                 <li>+34 601 247 837</li>
                 <li><a href="#">help</a></li>
             </ul>
-        </div>
-
-        <div class="footer__section" id="social">
-            <h2>SOCIAL</h2>
-            <!-- poner icons FA -->
         </div>
 
         <div class="footer__section">

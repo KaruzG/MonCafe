@@ -22,7 +22,9 @@
     --textShadowWhite: 1px 2px 7px rgba(255, 255, 255, 0.20);
 
     /* BACKGROUND SHADOW */
-    --backgroundShadowGradient: linear-gradient(rgba(0, 0, 0, 0.7) , transparent 15%);
+    --backgroundShadowGradient: linear-gradient(rgba(0, 0, 0, 0.55) , transparent 5%);
+    --backgroundShadowGradientFooter: linear-gradient(rgba(0, 0, 0, 0.7) , transparent 15%);
+
 
 /* BORDERS */
     --borderBrown: 3px solid var(--brownBorder);

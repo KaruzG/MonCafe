@@ -37,6 +37,10 @@ body {
 }
 
 /* HEADER */
+nav#desktopNav {
+    display: none;
+}
+
 header {
     background-color: transparent;
     position: absolute;
@@ -44,16 +48,22 @@ header {
     display: flex;
     flex-direction: row;
     width: 100vw;
+
+    align-items: flex-start;
+}
+
+nav#mobileNav {
+    padding: 1.5em;
 }
 
 /* HEADER */
     /* NAV */
-header nav, nav ul {
+/* header nav, nav ul {
     display: flex;
     justify-content: space-between;
 
     width: 100vw;
-}
+} */
 
 /* SECTION 1 */
 section#section1 {
@@ -120,6 +130,36 @@ main {
 .body__section img {
     max-width: 20vw;
     margin-bottom: 30px;
+    filter: drop-shadow(var(--textShadowLighter));
+}
+
+    /* Img container */
+.body__section div.body__section--image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30vw;
+    height: 30vw;
+
+    background-color: var(--brownLight);
+    border: 4px solid var(--brownBorder);
+    border-radius: 50%;
+
+    padding: 10px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+    /* Text and arrows container */
+.body__section div.body__section--textAndArrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body__section div.body__section--textAndArrows i {
+    color: rgba(128, 128, 128, 0.554);
 }
 
 .body__section h3 {
@@ -155,9 +195,9 @@ section#section2 {
     gap: 3vh;
 
     background-color: var(--brownDark);
+    background-image: var(--backgroundShadowGradient);
 
     padding: 10vw 5vw;
-
 }
 
 .section2__section {
@@ -186,7 +226,7 @@ section#section2 {
 /* FOOTER */
 
 footer {
-    background-image: var(--backgroundShadowGradient);
+    background-image: var(--backgroundShadowGradientFooter);
     background-color: var(--brownDarker);
 
     font-family: "Solway";
@@ -196,14 +236,7 @@ footer {
     padding-top: 30px;
 }
 
-.footer__section:first-child {
-    display: none;
-}
-
-.footer__section#social {
-    display: none;
-}
-
+    /* General */
 .footer__section {
     display: flex;
     flex-direction: column;
@@ -231,6 +264,28 @@ footer {
     text-decoration: underline;
 }
 
+    /* Social */
+.footer__section#social {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.footer__section#social h2 {
+    display: none;
+}
+
+.footer__section#social div {
+    display: flex;
+    gap: 2em;
+}
+
+    /* SITE PAGES */
+.footer__section:nth-child(2) {
+    display: none;
+}
+
+
+    /* Copyright */
 .footer__section:last-child {
     margin: 3em 0 1em 0;
     
