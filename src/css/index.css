@@ -58,12 +58,6 @@ nav#mobileNav {
 
 /* HEADER */
     /* NAV */
-/* header nav, nav ul {
-    display: flex;
-    justify-content: space-between;
-
-    width: 100vw;
-} */
 
 /* SECTION 1 */
 section#section1 {
@@ -246,6 +240,9 @@ footer {
     text-align: center;
     color: var(--brownLighter);
     font-size: x-large;
+
+    text-shadow: var(--textShadow);
+
 }
 
 .footer__section hr {

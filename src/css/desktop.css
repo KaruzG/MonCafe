@@ -1,0 +1,90 @@
+@media screen and (min-width: 900px) {
+    /* HEADER */
+        /* NAV */
+    nav#mobileNav {
+        display: none;
+    }
+
+    nav#desktopNav {
+        display: flex;
+        width: 100vw;
+    }
+
+    nav#desktopNav ul{
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+        margin: 1.5em 5em;
+
+        font-size: x-large;
+        font-family: "Solway";
+    }
+
+    /* SECTION 1 */
+    section#section1 {
+        height: 85vh;
+    }
+
+    section#section1 h1 {
+        font-size: 8vw;
+    }
+
+    section#section1 hr {
+        /* Font sizing is unprecise(taller than it should), this is a fix for it */
+        position: relative;
+        top: -35px;
+    }
+
+    section#section1 h2 {
+        font-size: 2.5vw;
+    }
+
+    /* MAIN */
+    main {
+        display: grid;
+        grid-template-columns: 33vw 33vw 33vw;
+    }
+
+    #body__section__2, #body__section__3 {
+        display: flex;
+    }
+
+    .body__section {
+        width: 100%;
+        padding: 2.5em;
+    }
+
+    .body__section div.body__section--image {
+        width: 10vw;
+        height: 10vw;
+    
+        padding: 1em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .body__section img {
+        object-fit: cover;
+        width: 6vw;
+    }
+
+    .body__section div.body__section--textAndArrows {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        max-width: 100%;
+    }
+
+    .body__section .body__section--textAndArrows h3 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .body__section--textAndArrows i {
+        display: none;
+    }
+}
