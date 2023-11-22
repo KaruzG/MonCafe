@@ -1,24 +1,25 @@
 @media screen and (min-width: 900px) {
     /* HEADER */
         /* NAV */
-    nav#mobileNav {
+    #mobileNav {
         display: none;
     }
 
-    nav#desktopNav {
+    #desktopNav {
         display: flex;
         width: 100vw;
     }
 
-    nav#desktopNav ul{
+    #desktopNav ul{
         display: flex;
         justify-content: space-between;
 
         width: 100%;
         margin: 1.5em 5em;
 
-        font-size: x-large;
+        font-size: xx-large;
         font-family: "Solway";
+        text-shadow: var(--textShadow);
     }
 
     #desktopNav ul li:hover {
@@ -35,7 +36,8 @@
     }
 
     section#section1 h1 {
-        font-size: 8vw;
+        font-size: 6vw;
+        letter-spacing: 25px;
     }
 
     section#section1 hr {
@@ -45,7 +47,7 @@
     }
 
     section#section1 h2 {
-        font-size: 2.5vw;
+        font-size: 1.5vw;
         text-shadow: var(--textShadow);
     }
 
@@ -149,12 +151,12 @@
 
     .footer__section h2 {
         text-decoration: underline;
-        font-size: large;
+        font-size: xx-large;
         margin-bottom: 0.3em;
     }
 
     .footer__section {
-        font-size: medium;
+        font-size: x-large;
     }
 
         /* SOCIAL */
