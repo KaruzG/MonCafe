@@ -11,21 +11,6 @@
     src:  url('../fonts/ButterChicken.otf') format('opentype');
 }
 
-
-* {
-    box-sizing: border-box;
-
-    margin: 0;
-    padding: 0;
-
-    text-decoration: none;
-    list-style-type: none;
-
-    max-width: 100%;
-
-    color: inherit;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -67,8 +52,8 @@ section#section1 {
     align-items: center;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.0) 85%, var(--brown)),
-                      linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
-                      url("../img/banner1.png");
+                      linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+                      url("../img/banner1Mobile.webp");
 
     height: 95vh;
     width: 100vw;
@@ -76,7 +61,7 @@ section#section1 {
 
 #section1 h1{
     font-family: ButterChicken;
-    font-size: 15vw;
+    font-size: 10vw;
     letter-spacing: 10px;
 
     text-shadow: var(--textShadow);
@@ -84,13 +69,16 @@ section#section1 {
 
 #section1 hr {
     width: 80vw;
+    /* Font sizing is uneven(taller than it should), this is a fix for it */
+    position: relative;
+    top: -20px;
 }
 
 #section1 h2 {
     font-family: "Spectral";
     font-style: italic;
-    letter-spacing: 8px;
-    font-size: 5vw;
+    letter-spacing: 5px;
+    font-size: 3.5vw;
     text-align: center;
 
     text-shadow: var(--textShadowWhite);

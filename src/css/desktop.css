@@ -15,7 +15,7 @@
         justify-content: space-between;
 
         width: 100%;
-        margin: 1.5em 5em;
+        margin: 1.5em 8%;
 
         font-size: xx-large;
         font-family: "Solway";
@@ -32,7 +32,7 @@
         height: 98vh;
         background-image: linear-gradient(rgba(0, 0, 0, 0.0) 90%, var(--brown)),
                           linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.70)),
-                          url("../img/banner1.png");
+                          url("../img/banner1.webp");
     }
 
     section#section1 h1 {
@@ -41,9 +41,7 @@
     }
 
     section#section1 hr {
-        /* Font sizing is unprecise(taller than it should), this is a fix for it */
-        position: relative;
-        top: -35px;
+        width: 60vw;
     }
 
     section#section1 h2 {
