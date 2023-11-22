@@ -21,9 +21,17 @@
         font-family: "Solway";
     }
 
+    #desktopNav ul li:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
     /* SECTION 1 */
     section#section1 {
-        height: 85vh;
+        height: 98vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.0) 90%, var(--brown)),
+                          linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.70)),
+                          url("../img/banner1.png");
     }
 
     section#section1 h1 {
@@ -38,12 +46,13 @@
 
     section#section1 h2 {
         font-size: 2.5vw;
+        text-shadow: var(--textShadow);
     }
 
     /* MAIN */
     main {
         display: grid;
-        grid-template-columns: 33vw 33vw 33vw;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     #body__section__2, #body__section__3 {
@@ -81,10 +90,99 @@
 
     .body__section .body__section--textAndArrows h3 {
         width: 100%;
-        max-width: 100%;
+        max-width: 85%;
+
+        font-size: xx-large;
     }
-/* CAMBIA LOS BOTONES  */
+
     .body__section--textAndArrows i {
         display: none;
+    }
+
+    .body__section button {
+        padding: 0 1em;
+    }
+
+    /* SECTION 2 */
+    section#section2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        padding: 5vh 3vw;
+    }
+
+    .section2__section h2 , .section2__section p {
+        font-size: xx-large;
+        max-width: 80%;
+    }
+
+    .section2__section {
+        padding: 0 1em;
+    }
+
+    .section2__section:nth-child(2) {
+        padding: 0;
+    }
+
+    .section2__section:nth-child(2) img {
+        height: 100%;
+    }
+
+    /* FOOTER */
+        /* GENERAL */
+    footer {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer__section {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-start;
+    }
+
+    .footer__section hr {
+        display: none;
+    }
+
+    .footer__section h2 {
+        text-decoration: underline;
+        font-size: large;
+        margin-bottom: 0.3em;
+    }
+
+    .footer__section {
+        font-size: medium;
+    }
+
+        /* SOCIAL */
+    .footer__section#social {
+        order: 3;
+    
+        margin: 0;
+    }
+
+    .footer__section#social h2 {
+        display: block;
+        margin-bottom: 1.1em;
+    }
+
+        /* SITE PAGES */
+    .footer__section:nth-child(2) {
+        display: flex;
+        order: 1;
+    }
+
+        /* CONTACT US */
+    .footer__section:nth-child(3) {
+        order: 2;
+    }
+
+        /* COPYRIGHT */
+    .footer__section:nth-child(4) {
+        order: 4;
+        grid-column: span 3;
     }
 }
